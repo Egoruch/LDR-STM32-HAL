@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"photocell\startup_stm32f103xb.o"
+"photocell\main.o"
+"photocell\stm32f1xx_it.o"
+"photocell\stm32f1xx_hal_msp.o"
+"photocell\stm32f1xx_hal_gpio_ex.o"
+"photocell\stm32f1xx_hal_adc.o"
+"photocell\stm32f1xx_hal_adc_ex.o"
+"photocell\stm32f1xx_hal.o"
+"photocell\stm32f1xx_hal_rcc.o"
+"photocell\stm32f1xx_hal_rcc_ex.o"
+"photocell\stm32f1xx_hal_gpio.o"
+"photocell\stm32f1xx_hal_dma.o"
+"photocell\stm32f1xx_hal_cortex.o"
+"photocell\stm32f1xx_hal_pwr.o"
+"photocell\stm32f1xx_hal_flash.o"
+"photocell\stm32f1xx_hal_flash_ex.o"
+"photocell\stm32f1xx_hal_exti.o"
+"photocell\stm32f1xx_hal_tim.o"
+"photocell\stm32f1xx_hal_tim_ex.o"
+"photocell\stm32f1xx_hal_uart.o"
+"photocell\system_stm32f1xx.o"
+"photocell\retarget_io.o"
+--library_type=microlib --strict --scatter "photocell\photocell.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "photocell.map" -o photocell\photocell.axf
